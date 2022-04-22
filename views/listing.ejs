@@ -1,0 +1,24 @@
+<style type="text/css">
+    li {
+        display: inline-block;
+        text-align: left;
+    }
+</style>
+
+<% books.forEach(s=>
+    { %> 
+        <h3>Book Title: <%=s.name%></h3>
+        <p><b>Author:</b><%=s.author%></p>
+        
+
+        <a href="<%=s.link %>""><p>Click Here to buy on Amazon</p></a>
+    <% });
+%>
+
+<ul>
+    <li><a href="/home">List of Books</a></li>
+    <li>|</li>
+    <li><a href="/addNewBook">Add Book</a></li>
+    <li>|</li>
+    <li><a href="/DeleteABook">Delete Book</a></li>
+</ul>

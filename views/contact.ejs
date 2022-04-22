@@ -1,0 +1,30 @@
+<style type="text/css">
+    li {
+        display: inline-block;
+        text-align: left;
+    }
+</style>
+
+<div class="data-form">
+    <form action="/newBook" method="post">
+        <h2> Add a New Book</h2>
+        <label for="inputBookName">Name: </label><br>
+        <input type="text" name="name" id="inputBookName" autofocus><br><br>
+        <label for="inputAuthorName">Author Name: </label><br>
+        <input type="text" name="author" id="inputAuthorName" autofocus><br><br>
+        <label for="inputBookLink">Book Link: </label><br>
+        <input type="text" name="link" id="inputBookLink" placeholder="Link To Amazon" autofocus><br><br>
+        <label for="inputID">Book ID: </label><br>
+        <input type="text" name="book" id="inputID" placeholder="Book Number" autofocus><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<hr>
+<ul>
+    <li><a href="/home">List of Books</a></li>
+    <li>|</li>
+    <li><a href="/AddNewBook">Add Book</a></li>
+    <li>|</li>
+    <li><a href="/DeleteABook">Delete Book</a></li>
+</ul>
